@@ -6,16 +6,15 @@ import './assets/pic/font/bootstrap-icons.css'
 import './assets/pic/font/bootstrap-icons.min.css'
 import Manoir from './components/Manoir.jsx'
 import Cards from './components/bloc/Cards.jsx'
+import De from './components/Test/De.jsx'
 function App() {
-  
+  const newFace = Math.floor(Math.random() * 6) + 1;
 
   return (
     <>
       {/* <Manoir name="Dupont" age="2007-2-13" /> */}
-      {/* <Card logo={redcar} title="CAR" descrption="American Auto Brokers San Antonio, TX" user={{name:"John Doe", avatar:"avatar.jpg"}} likes={4.5 + "K"} background="red" />
-      <Card logo={greencar} title="CAR" descrption="American Auto Brokers San Antonio, TX" user={{name:"Jane Smith", avatar:"avatar.jpg"}} likes={2654} background="green" />
-      <Card logo={bluecar} title="CAR" descrption="American Auto Brokers San Antonio, TX" user={{name:"Alex Berd", avatar:"avatar.jpg"}} likes={2654} background="blue" /> */}
-      <Cards  />
+      {/* <Cards  /> */}
+      <De cache={6} />
     </>
   )
 }
